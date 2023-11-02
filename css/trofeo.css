@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.navBar img{
+    width: 260px;
+    height: 50px;
+    transition: all 1s;
+    margin-right: 60vw;
+}
+
+.navBar img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.enlaces{
+    transition: all 1s;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    background-color: #131313;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px black;
+    border: 1px solid #090909;
+    padding: 10px;
+}
+
+.enlaces:hover{
+    transform: scale(1.05);
+    color: darkred;
+}
+
+.copaImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copa{
+    margin: 1rem auto;
+    width: 200px;
+    height: 240px;
+}
+
+.carouselItems{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carouselItem{
+    transition: all 1s;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-width: 500px;
+    max-width: 500px;
+    height: 300px;
+    z-index: 0;
+}
+
+.carouselItem:hover{
+    transform: scale(1.3);
+    z-index: 10;
+}
+
+.carouselItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 25px black;
+    border: 1px solid black;
+}
+
+main p{
+    margin-bottom: 1rem;
+    color: white;
+    margin: 1.5rem 7rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (max-width: 1612px) {
+    .navBar img{
+        margin-right: 50vw;
+    }
+}
+
+@media (max-width: 1164px) {
+    .navBar img{
+        margin-right: 40vw;
+    }
+}
+
+@media (max-width: 1036px) {
+    .navBar img{
+        margin-right: 40vw;
+    }
+}
+
+
+@media (max-width: 1036px) {
+    .navBar img{
+        margin-right: 30vw;
+    }
+}
+
+@media (max-width: 822px) {
+    .navBar img{
+        margin-right: 20vw;
+    }
+}
+
+@media (max-width: 704px) {
+    .navBar img{
+        margin-right: 12vw;
+    }
+}
+
+@media (max-width: 562px) {
+    .navBar img{
+        width: 200px;
+        height: 40px;
+    }
+
+    .enlaces{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.navBar{
+    max-width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.navBar img{
+    width: 260px;
+    height: 50px;
+    transition: all 1s;
+    margin-right: 60vw;
+}
+
+.navBar img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.enlaces{
+    transition: all 1s;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    height: 60px;
+    width: 150px;
+    background-color: #131313;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px black;
+    border: 1px solid #090909;
+    padding: 10px;
+}
+
+.enlaces:hover{
+    transform: scale(1.05);
+    color: darkred;
+}
+
+.shields{
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.shields a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shields img{
+    transition: all 1s;
+    width: 100px;
+    height: 100px;
+    margin: 2rem auto;
+}
+
+.shields img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1612px) {
+    .navBar img{
+        margin-right: 50vw;
+    }
+}
+
+@media (max-width: 1612px) {
+    .card{
+        width: 450px;
+    }
+}
+
+@media (max-width: 1164px) {
+    .navBar img{
+        margin-right: 40vw;
+    }
+}
+
+@media (max-width: 1036px) {
+    .navBar img{
+        margin-right: 40vw;
+    }
+}
+
+
+@media (max-width: 1036px) {
+    .navBar img{
+        margin-right: 30vw;
+    }
+}
+
+@media (max-width: 822px) {
+    .navBar img{
+        margin-right: 20vw;
+    }
+
+    .shields{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 704px) {
+    .navBar img{
+        margin-right: 12vw;
+    }
+}
+
+@media (max-width: 562px) {
+    .navBar img{
+        width: 200px;
+        height: 40px;
+    }
+
+    .enlaces{
+        font-size: 1.5rem;
+    }
+
+    .shields{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
