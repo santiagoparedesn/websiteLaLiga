@@ -1,14 +1,17 @@
+/* Seteo de pagina */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Definimos ancho y alto de la pagina */
 body{
     max-width: 100vw;
     height: 100vh;
 }
 
+/* INICIO de bloque para configiracion de menús */
 .navBar{
     max-width: 100vw;
     height: 10vh;
@@ -28,7 +31,9 @@ body{
     cursor: pointer;
     transform: scale(1.05);
 }
+/* FIN de bloque para configiracion de menús */
 
+/* INICIO de bloque de formato de enlaces y sus eventos */
 .enlaces{
     transition: all 1s;
     appearance: none;
@@ -54,7 +59,9 @@ body{
     transform: scale(1.05);
     color: darkred;
 }
+/* FIN de bloque de formato de enlaces y sus eventos */
 
+/* INICIO de bloque de formato de dashboard en pagina principal */
 .shields{
     width: 90%;
     margin: 2rem auto;
@@ -79,8 +86,9 @@ body{
     transform: scale(1.2);
     cursor: pointer;
 }
+/* FIN de bloque de formato de dashboard en pagina principal */
 
-
+/* Inicio de bloque para configiración de comportamiento responsive de la página */
 @media (max-width: 1612px) {
     .navBar img{
         margin-right: 50vw;

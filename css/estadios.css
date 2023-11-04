@@ -1,14 +1,17 @@
+/* Seteo de pagina */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Definimos ancho y alto de la pagina */
 body{
     width: 100vw;
     height: 100vh;
 }
 
+/* INICIO de bloque para configiracion de menús */
 .navBar{
     width: 100%;
     height: 10vh;
@@ -28,7 +31,9 @@ body{
     cursor: pointer;
     transform: scale(1.05);
 }
+/* FIN de bloque para configiracion de menús */
 
+/* INICIO de bloque de formato de enlaces y sus eventos */
 .enlaces{
     transition: all 1s;
     appearance: none;
@@ -54,7 +59,9 @@ body{
     transform: scale(1.05);
     color: darkred;
 }
+/* FIN de bloque de formato de enlaces y sus eventos */
 
+/* Configuramos como se mostrarán las tarjetas de cada estadio dentro de la página */
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,6 +69,7 @@ main{
     margin: 3rem 10vw;
 }
 
+/* INICIO de clase para configuracion y formato de cards para equipos */
 .card{
     width: 400px;
     height: 500px;
@@ -101,7 +109,9 @@ main{
     border-radius: 16px;
     margin-bottom: 1.5rem;
 }
+/* FIN de clase para configuracion y formato de cards para equipos */
 
+/* Inicio de bloque para configiración de comportamiento responsive de la página */
 @media (max-width: 1612px) {
     .card{
         width: 350px;

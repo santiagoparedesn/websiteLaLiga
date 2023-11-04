@@ -1,9 +1,11 @@
+/* Seteo de pagina */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* INICIO de bloque para configuracion de menús */
 .navBar{
     width: 100%;
     height: 10vh;
@@ -23,7 +25,9 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+/* FIN de bloque para configuracion de menús */
 
+/* INICIO de bloque de formato de enlaces y sus eventos */
 .enlaces{
     transition: all 1s;
     appearance: none;
@@ -49,19 +53,23 @@
     transform: scale(1.05);
     color: darkred;
 }
+/* FIN de bloque de formato de enlaces y sus eventos */
 
+/* Definimos clase para manejo de div en página */
 .copaImg{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Definimos clase para manejo de imagen en página */
 .copa{
     margin: 1rem auto;
     width: 200px;
     height: 240px;
 }
 
+/* INICIO de bloque de clase para configuracion y formato de carrusel */
 .carouselItems{
     display: flex;
     overflow-x: hidden;
@@ -90,7 +98,9 @@
     box-shadow: 0 0 25px black;
     border: 1px solid black;
 }
+/* FIN de bloque de clase para configuracion y formato de carrusel */
 
+/* Generamos formato de parrafos en la pagina */
 main p{
     margin-bottom: 1rem;
     color: white;
@@ -100,6 +110,7 @@ main p{
     text-align: justify;
 }
 
+/* Inicio de bloque para configiración de comportamiento responsive de la página */
 @media (max-width: 1612px) {
     .navBar img{
         margin-right: 50vw;
@@ -117,7 +128,6 @@ main p{
         margin-right: 40vw;
     }
 }
-
 
 @media (max-width: 1036px) {
     .navBar img{
